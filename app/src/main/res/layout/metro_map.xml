@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+            android:layout_width="12dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="#54b8ff"
+            android:id="@+id/view2" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:layout_alignBottom="@+id/naebang"
+            android:layout_alignParentStart="true"
+            android:background="#7fa971"
+            android:id="@+id/view3" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:layout_alignBottom="@+id/bangbae"
+            android:layout_alignParentStart="true"
+            android:background="#14b61c" />
+
+        <TextView
+            android:id="@+id/chText"
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:layout_above="@+id/naebang"
+            android:layout_marginBottom="13dp"
+            android:layout_toStartOf="@+id/naebang"
+            android:text="총신대입구(이수)"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/naeText"
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:textSize="20sp"
+            android:layout_alignBaseline="@+id/chText"
+            android:layout_alignBottom="@+id/chText"
+            android:layout_alignStart="@+id/bandText"
+            android:text="내방" />
+
+        <TextView
+            android:id="@+id/sungText"
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:textSize="20sp"
+            android:layout_alignBaseline="@+id/chText"
+            android:layout_alignBottom="@+id/chText"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/naksung"
+            android:text="남성" />
+
+        <TextView
+            android:id="@+id/nakText"
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:textSize="20sp"
+            android:layout_above="@+id/naksung"
+            android:layout_alignStart="@+id/sungText"
+            android:text="낙성대" />
+
+        <TextView
+            android:id="@+id/bandText"
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:textSize="20sp"
+            android:layout_above="@+id/bangbae"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/bangbae"
+            android:text="방배" />
+
+        <TextView
+            android:id="@+id/saText"
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:textSize="20sp"
+            android:layout_above="@+id/sadang"
+            android:layout_alignStart="@+id/namText"
+            android:text="사당" />
+
+        <TextView
+            android:id="@+id/namText"
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:textSize="20sp"
+            android:layout_alignBottom="@+id/nam"
+            android:layout_marginStart="22dp"
+            android:layout_toEndOf="@+id/nam"
+            android:text="남태령" />
+        <Button
+            android:id="@+id/nam"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignStart="@+id/sadang"
+            android:layout_below="@+id/sadang"
+            android:background="@drawable/round_button_white"
+            android:text="" />
+
+        <Button
+            android:id="@+id/bangbae"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignBottom="@+id/sadang"
+            android:layout_alignStart="@+id/naebang"
+            android:background="@drawable/round_button_white"
+            android:text="" />
+
+        <Button
+            android:id="@+id/naksung"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignStart="@+id/namsung"
+            android:layout_below="@+id/chongsin"
+            android:background="@drawable/round_button_white"
+            android:text="" />
+
+        <Button
+            android:id="@+id/namsung"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignBottom="@+id/view3"
+            android:layout_alignEnd="@+id/misc"
+            android:layout_marginEnd="23dp"
+            android:background="@drawable/round_button_white"
+            android:text="" />
+
+        <Button
+            android:id="@+id/naebang"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignBottom="@+id/chongsin"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="76dp"
+            android:background="@drawable/round_button_white"
+            android:text="" />
+
+        <Button
+            android:id="@+id/chongsin"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_above="@+id/sadang"
+            android:layout_alignStart="@+id/view2"
+            android:layout_marginBottom="130dp"
+            android:background="@drawable/round_button_white"
+            android:text="" />
+
+        <Button
+            android:id="@+id/misc"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="160dp"
+            android:layout_marginEnd="98dp"
+            android:layout_toStartOf="@+id/nam"
+            android:background="@drawable/round_button_white"
+            android:text=""
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/sadang"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_above="@+id/misc"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="95dp"
+            android:background="@drawable/round_button_white"
+            android:text="" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:layout_toEndOf="@+id/bangbae"
+            android:background="@drawable/green_back" />
+
+
+    </RelativeLayout>
+</LinearLayout>

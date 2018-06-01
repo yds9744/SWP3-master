@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:background="#FFFFFF "
+        android:orientation="horizontal">
+<!--11라인 색 바꿔 주세요 ~~
+http://griper.tistory.com/entry/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-UI-RRGGBB-%EC%83%89%EC%83%81%ED%91%9C
+ 여기 참고!-->
+        <TextView
+            android:id="@+id/depart_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="출발 시각"
+            android:textSize="23dp" />
+
+        <Button
+            android:id="@+id/btnList"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:text="선택"
+            android:textSize="23dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/depart_btn"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="128dp"
+            android:background="@drawable/round_button1"
+            android:text="출발역" />
+
+        <Button
+            android:id="@+id/arrival_btn"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/depart_btn"
+            android:layout_marginEnd="75dp"
+            android:background="@drawable/round_button1"
+            android:text="도착역" />
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="105dp"
+            android:text="확인" />
+
+        <Button
+            android:id="@+id/map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="37dp"
+            android:layout_marginEnd="22dp"
+            android:background="@drawable/round_button_blue"
+            android:text="노선도" />
+
+    </RelativeLayout>
+
+</LinearLayout>
